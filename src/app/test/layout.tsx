@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+// import 할 때에는 네비게이션으로 import해야 한다!!
 import React, { useEffect } from "react";
 
 const TestLayout = ({ children }: { children: React.ReactNode }) => {
