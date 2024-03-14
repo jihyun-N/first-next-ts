@@ -2,20 +2,8 @@
   "todos": [
     {
       "id": "1",
-      "title": "커피마시기",
-      "content": "아메리카노 마시기",
-      "isDone": false
-    },
-    {
-      "id": "1",
       "title": "책 읽기",
       "content": "자바스크립트 책 읽기",
-      "isDone": false
-    },
-    {
-      "id": "3",
-      "title": "bbbb",
-      "content": "bbb",
       "isDone": false
     },
     {
@@ -29,6 +17,39 @@
       "title": "TEST TITLE 2",
       "content": "TEST CONTENT 2",
       "isDone": false
+    },
+    {
+      "id": "45ee",
+      "title": "김연재",
+      "content": "ㅜㅜㅜ"
+    },
+    {
+      "id": "ff9a",
+      "title": "정보연",
+      "content": "마마"
+    },
+    {
+      "id": "6c20",
+      "title": "정보연님",
+      "content": "마마 통촉스"
+    },
+    {
+      "id": "e68a",
+      "title": "보연님",
+      "content": "제발 통촉스",
+      "isDone": false
+    },
+    {
+      "id": "06f0",
+      "title": "김예린",
+      "content": "지현아 영어공부좀 해라",
+      "isDone": false
+    },
+    {
+      "id": "37d1",
+      "title": "김철균",
+      "content": "우리 너무 잘 맞아",
+      "isDone": true
     }
   ]
 }

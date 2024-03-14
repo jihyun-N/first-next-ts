@@ -3,11 +3,14 @@ export type Explanation = {
   length: number;
 };
 
-export type Todo = {
+export interface Todo {
   id: string;
   title: string;
   content: string;
   isDone: boolean;
-};
+}
 
-export type Todos = Array<Todo>;
+export type NewTodo = {
+  title: string;
+  content: string;
+};

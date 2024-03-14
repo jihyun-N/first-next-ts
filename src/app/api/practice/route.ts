@@ -1,3 +1,5 @@
+import { Todo } from "@/types";
+
 export async function GET(request: Request) {
   const response = await fetch(`http://localhost:4000/todos`);
   const todos = await response.json();
@@ -8,12 +10,13 @@ export async function GET(request: Request) {
   }
 
   return Response.json({
-    todos: [
-      ...todos,
-      {
-        test: "test",
-      },
-    ],
+    todos: todos,
+    // [
+    //   ...todos,
+    //   {
+    //     test: "test",
+    //   },
+    // ],
   });
 }
 
@@ -34,3 +37,25 @@ export async function POST(request: Request) {
 
   return Response.json({ todo });
 }
+
+export const deleteTodo = async (todo: Todo) => {
+  await fetch(`http://localhost:4000/todos/${todo.id}`, {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+    },
+
+    body: JSON.stringify(todo),
+  });
+};
+
+export const toggleTodo = async (todo: Todo) => {
+  await fetch(`http://localhost:4000/todos/${todo.id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+
+    body: JSON.stringify({ isDone: !todo.isDone }),
+  });
+};
